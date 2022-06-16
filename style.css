@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    min-width: 400px;
+}
+
+h1 {
+    color: darkorange;
+}
+
+b{
+    font-size: 20;
+}
+
+#aligncenter {
+    text-align: center;
+}
+
+#mediumheader {
+    color: darkorange;
+}
+
+#headerlogo {
+    margin: 100px 0px 100px 100px;
+}
+
+#facultylist {
+    width: 100%;
+    height: auto;
+}
+
+.body {
+	margin: 0;
+	    background-image: url("https://ik.imagekit.io/0wtktp5pvac/McNally_Website/hd-tiger-wallpaper-whatspaper-4_A2RSmkliYTKI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642737562577");
+        height: 600px;
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+ 
+.about {
+	margin: 0;
+	    background-image: url("https://ik.imagekit.io/0wtktp5pvac/McNally_Website/frontofschool_olJP9PCWI.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1642795485381");
+        height: 600px;
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+       
+.frontofschool {
+    float: right;
+    width: 340px;
+    height: auto;
+    margin: 5px;
+}
+
+.imglarge {
+    float: right;
+    width: 550px;
+    height: auto;
+}
+
+#imgfull {
+	Width: 100%;
+	align: center;
+	height: auto;
+}
+
+#bullet {
+    height: 7px;
+    width: 7px;
+    padding: 7px 7px 0px 20px;
+    float: left;
+}
+
+.back{
+    background-color: lightgrey;
+}
+
+#filler {
+    height: 300px;
+    position: relative;
+}
+
+#fillersmall {
+    height: 100px;
+    position: relative;
+}
+
+.bigtext {
+    color: white;
+    font-size: 90;
+    text-align: center;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+.mediumtext {
+    color: silver;
+    margin: 0;
+    font-size: 45;
+    text-align: center;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+.vertical-center {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 200px;
+}
+tr td {
+  border: 1px solid #000;
+  width: 150px;
+  display: block;
+}
+td+td {
+  width: auto;
+}
+
+
+th {
+	padding-top: 13px;
+	padding-bottom: 13px;
+	font-family: helvetica;
+	background-color: transparent;
+}
+
+#navbar {
+    display: flex;
+    background-color: rgba(0,0,0,.4);
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-content {
+    width: 90%;
+    margin: auto auto 0px auto;
+    background-color: #E7E7E7;
+    padding: 5px 10px 5px 10px;
+    border: 6px solid  #E7E7E7;
+    font-family: verdana;
+}
+
+.image {
+    width: 56px;
+    height: 18px;
+}
+
+.block {
+    display: inline-block;
+    margin: 10px;
+}
+
+#black {
+    color: black;
+    font-size: 30;
+    padding: 5px;
+    margin: 0;
+}
+
+#copyright {
+padding: 10px 16px 10px 16px;
+margin:auto;
+  width: 90%;
+  background-color: darkorange;
+  font-family: helvetica;
+  color: white;
+  text-align: right;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.plink {
+    margin: 0px auto 35px auto;
+}
+
+#navfront {
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: darkorange;
+}
+
+#navfrontspace {
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: darkorange;
+  margin-bottom: 300px;
+}
+
+
+ul {
+  background: darkorange;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  font-family: helvetica;
+}
+
+li {
+  color: #fff;
+  background: darkorange;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+}
+
+li a img {
+  color: #fff;
+  background: darkorange;
+  display: block;
+  float: left;
+  position: relative;
+  text-decoration: none;
+}
+
+li a {
+  color: #fff;
+}
+
+li:hover {
+  background: orange;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 9rem;
+  position: absolute;
+  margin-top: 1em;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
