@@ -1,266 +1,335 @@
-body {
-    margin: 0;
-    min-width: 400px;
+*{
+  margin:0;
+  padding:0;
+  font-family: Helvetica;
+  text-decoration: none;
 }
 
+.image {
+  width: 68px;
+  height: 20px;
+  padding-right: 15px;
+}
+
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: rgb(202, 112, 1);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  padding:0px 15px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+header .navbar ul{
+  list-style: none;
+}
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a{
+  font-size: 17px;
+  padding: 15px;
+  color: White;
+  display: block;
+  font-family: helvetica;
+}
+
+header .navbar ul li a:hover{
+  background: rgb(182, 101, 2);
+  color: white;
+}
+
+header .navbar ul li ul{
+  position:absolute;
+  padding-left:0px;
+  width: 200px;
+  background-color: rgb(202, 112, 1);
+  display: none;
+}
+
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+header .navbar ul li ul li ul{
+  left: 200px;
+  top:0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+#menu-bar{
+  display: none;
+}
+
+header label{ 
+  font-size: 17px;
+  color:White;
+  cursor: pointer;
+  display: none;
+  float: right;
+}
+
+
+
+@media(max-width:991px){
+
+  header{
+    padding:20px;
+    justify-content: space-between;
+  }
+
+  header label{
+    display:initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top: 100%;
+    left:0;
+    right:0;
+    background:rgb(202, 112, 1);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  header .navbar ul li {
+    width:100%;
+    padding-left:0px;
+  }
+
+  header .navbar ul li ul{
+    position: relative;
+    width:100%;
+    padding-left:0px;
+  }
+
+  header .navbar ul li ul li{
+    background-color: rgb(192, 106, 2);
+    color: white;
+    padding-left:0px;
+  }
+  header .navbar ul li ul li ul{
+    width: 100%;
+    left: 0;
+  }
+
+  #menu-bar:checked ~ .navbar{
+    display: initial;
+  }
+}
+
+
+
 h1 {
-    color: darkorange;
+  color: darkorange;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p { 
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 b{
-    font-size: 20;
+  font-size: 20;
 }
 
 #aligncenter {
-    text-align: center;
+  text-align: center;
 }
 
 #mediumheader {
-    color: darkorange;
+  color: darkorange;
 }
 
 #headerlogo {
-    margin: 100px 0px 100px 100px;
+  margin: 150px 0px 100px 100px;
 }
 
 #facultylist {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .body {
-	margin: 0;
-	    background-image: url("https://ik.imagekit.io/0wtktp5pvac/McNally_Website/hd-tiger-wallpaper-whatspaper-4_A2RSmkliYTKI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642737562577");
-        height: 600px;
-        min-height: 400px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+margin: 0;
+    background-image: url("https://ik.imagekit.io/0wtktp5pvac/McNally_Website/hd-tiger-wallpaper-whatspaper-4_A2RSmkliYTKI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1642737562577");
+      height: 600px;
+      min-height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 }
- 
+
 .about {
-	margin: 0;
-	    background-image: url("https://ik.imagekit.io/0wtktp5pvac/McNally_Website/frontofschool_olJP9PCWI.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1642795485381");
-        height: 600px;
-        min-height: 400px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+margin: 0;
+    background-image: url("https://ik.imagekit.io/0wtktp5pvac/McNally_Website/frontofschool_olJP9PCWI.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1642795485381");
+      height: 600px;
+      min-height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 }
-       
+     
 .frontofschool {
-    float: right;
-    width: 340px;
-    height: auto;
-    margin: 5px;
+  float: right;
+  width: 340px;
+  height: auto;
+  margin: 5px;
 }
 
 .imglarge {
-    float: right;
-    width: 550px;
-    height: auto;
+  float: right;
+  width: 550px;
+  height: auto;
 }
 
 #imgfull {
-	Width: 100%;
-	align: center;
-	height: auto;
+Width: 100%;
+align: center;
+height: auto;
 }
 
 #bullet {
-    height: 7px;
-    width: 7px;
-    padding: 7px 7px 0px 20px;
-    float: left;
+  height: 7px;
+  width: 7px;
+  padding: 7px 7px 0px 20px;
+  float: left;
 }
 
 .back{
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
 #filler {
-    height: 300px;
-    position: relative;
+  height: 500px;
+  position: relative;
 }
 
 #fillersmall {
-    height: 100px;
-    position: relative;
+  height: 100px;
+  position: relative;
 }
 
 .bigtext {
-    color: white;
-    font-size: 90;
-    text-align: center;
-    font-family: verdana;
-    font-weight: bold;
+  color: white;
+  font-size: 90;
+  text-align: center;
+  font-family: verdana;
+  font-weight: bold;
 }
 
 .mediumtext {
-    color: silver;
-    margin: 0;
-    font-size: 45;
-    text-align: center;
-    font-family: verdana;
-    font-weight: bold;
+  color: silver;
+  margin: 0;
+  font-size: 45;
+  text-align: center;
+  font-family: verdana;
+  font-weight: bold;
 }
 
 .vertical-center {
-    margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
 }
 
 
 table {
-  table-layout: fixed;
-  border-collapse: collapse;
-  width: 200px;
+table-layout: fixed;
+border-collapse: collapse;
+width: 200px;
 }
 tr td {
-  border: 1px solid #000;
-  width: 150px;
-  display: block;
+border: 1px solid #000;
+width: 150px;
+display: block;
 }
 td+td {
-  width: auto;
+width: auto;
 }
 
 
 th {
-	padding-top: 13px;
-	padding-bottom: 13px;
-	font-family: helvetica;
-	background-color: transparent;
-}
-
-#navbar {
-    display: flex;
-    background-color: rgba(0,0,0,.4);
-    padding: 0;
-    align-items: center;
-    justify-content: space-between;
+padding-top: 13px;
+padding-bottom: 13px;
+font-family: helvetica;
+background-color: transparent;
 }
 
 #main-content {
-    width: 90%;
-    margin: auto auto 0px auto;
-    background-color: #E7E7E7;
-    padding: 5px 10px 5px 10px;
-    border: 6px solid  #E7E7E7;
-    font-family: verdana;
+  width: 90%;
+  margin: auto auto 0px auto;
+  background-color: #E7E7E7;
+  padding: 5px 10px 5px 10px;
+  border: 6px solid  #E7E7E7;
+  font-family: verdana;
 }
 
 .image {
-    width: 56px;
-    height: 18px;
+  width: 56px;
+  height: 18px;
 }
 
 .block {
-    display: inline-block;
-    margin: 10px;
+  display: inline-block;
+  margin: 10px;
 }
 
 #black {
-    color: black;
-    font-size: 30;
-    padding: 5px;
-    margin: 0;
+  color: black;
+  font-size: 30;
+  padding: 5px;
+  margin: 0;
 }
 
 #copyright {
 padding: 10px 16px 10px 16px;
 margin:auto;
-  width: 90%;
-  background-color: darkorange;
-  font-family: helvetica;
-  color: white;
-  text-align: right;
+width: 90%;
+background-color: darkorange;
+font-family: helvetica;
+color: white;
+text-align: right;
 }
 
 
 a {
-  text-decoration: none;
+text-decoration: none;
 }
 
 .plink {
-    margin: 0px auto 35px auto;
-}
-
-#navfront {
-  padding-bottom: 50px;
-  width: 100%;
-  background-color: darkorange;
-}
-
-#navfrontspace {
-  padding-bottom: 50px;
-  width: 100%;
-  background-color: darkorange;
-  margin-bottom: 300px;
-}
-
-
-ul {
-  background: darkorange;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  font-family: helvetica;
-}
-
-li {
-  color: #fff;
-  background: darkorange;
-  display: block;
-  float: left;
-  padding: 1rem;
-  position: relative;
-  text-decoration: none;
-}
-
-li a img {
-  color: #fff;
-  background: darkorange;
-  display: block;
-  float: left;
-  position: relative;
-  text-decoration: none;
-}
-
-li a {
-  color: #fff;
-}
-
-li:hover {
-  background: orange;
-  cursor: pointer;
-}
-
-ul li ul {
-  background: orange;
-  visibility: hidden;
-  opacity: 0;
-  min-width: 9rem;
-  position: absolute;
-  margin-top: 1em;
-  left: 0;
-  display: none;
-}
-
-ul li:hover > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-ul li ul li {
-  clear: both;
-  width: 100%;
+  margin: 0px auto 35px auto;
 }
